@@ -8,25 +8,29 @@
     <title>To-Do List</title>
 </head>
 <body>
-<div class="container">
-    <h1 class="header">Yeroo ToDo List</h1>
-    <div class="task-list" id="task-list">
-    </div>   
-    <div class="bottom-part">
-        <input type="text" class="task-input" id="task-input" placeholder="Enter your task here" required>
-        <input type="button" value="Add Task" class="add-task" id="add-task">
-    </div>
-
-    <div id="editModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Edit Task</h2>
-    <input type="text" id="editInput" />
-    <button id="saveButton">Save</button>
-  </div>
-  
-</div>
-</div>
-<script src="main.js"></script>
+    <main class="container">
+        <header class="header">
+            <h1><i class="fa-solid fa-list-check"></i> Yeroo ToDo List</h1>
+        </header>
+        <section class="task-section">
+            <div class="task-list" id="task-list"></div>
+        </section>
+        <section class="input-section">
+            <input type="text" class="task-input" id="task-input" placeholder="Enter your task here" required>
+            <button class="add-task" id="add-task"><i class="fa fa-plus"></i> Add Task</button>
+        </section>
+        <footer class="footer">
+            <p>Made with <i class="fa fa-heart"></i> by Firaa</p>
+        </footer>
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Task</h2>
+                <input type="text" id="editInput" />
+                <button id="saveButton">Save</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
